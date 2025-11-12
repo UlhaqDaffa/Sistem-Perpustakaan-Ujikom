@@ -67,7 +67,7 @@ Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini s
   DB_CONNECTION=mysql
   DB_HOST=127.0.0.1
   DB_PORT=3306
-  DB_DATABASE=sistempakar
+  DB_DATABASE=sistem_perpustakaan
   DB_USERNAME=root
   DB_PASSWORD=
 ```
