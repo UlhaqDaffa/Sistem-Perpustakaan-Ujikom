@@ -101,11 +101,11 @@ Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini s
 
 Pembuat menggunakan laravel herd site generator untuk development aplikasi, berikut cara konfigurasinya:
 
-1). Install Laravel Herd jika belum
-2). Klik Sites pada menu sidebar
-3). Klik tombol add pada pojok kanan
-4). Pilih link existing project lalu next
-5). Pilih folder project yang sudah di clone
-6). Atur project name dan klik https kemudian next
+- Install Laravel Herd jika belum
+- Klik Sites pada menu sidebar
+- Klik tombol add pada pojok kanan
+- Pilih link existing project lalu next
+- Pilih folder project yang sudah di clone
+- Atur project name dan klik https kemudian next
 
 
