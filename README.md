@@ -103,7 +103,7 @@ Pembuat menggunakan laravel herd site url generator untuk development aplikasi, 
 
 - Install Laravel Herd jika belum
 - Klik Sites pada menu sidebar
-- Klik tombol add pada pojok kanan
+- Klik tombol add pada pojok kiri
 - Pilih link existing project lalu next
 - Pilih folder project yang sudah di clone
 - Atur project name dan klik https kemudian next
