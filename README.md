@@ -85,7 +85,7 @@ Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini s
   php artisan migrate
 ```
 
-10). Jalankan migrasi database seeder untuk mengisi database
+10). Jalankan database seeder untuk mengisi database
 
 ```bash
   php artisan db:seed
