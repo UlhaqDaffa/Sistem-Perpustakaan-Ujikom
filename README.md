@@ -99,7 +99,7 @@ Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini s
 
 ### Konfigurasi Laravel Herd (opsional)
 
-Pembuat menggunakan laravel herd site generator untuk development aplikasi, berikut cara konfigurasinya:
+Pembuat menggunakan laravel herd site url generator untuk development aplikasi, berikut cara konfigurasinya:
 
 - Install Laravel Herd jika belum
 - Klik Sites pada menu sidebar
