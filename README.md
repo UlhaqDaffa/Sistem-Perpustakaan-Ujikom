@@ -107,5 +107,5 @@ Pembuat menggunakan laravel herd site url generator untuk development aplikasi, 
 - Pilih link existing project lalu next
 - Pilih folder project yang sudah di clone
 - Atur project name dan klik https kemudian next
-
+- Proyek lokal sekarang sudah memiliki url
 
