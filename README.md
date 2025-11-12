@@ -79,19 +79,19 @@ Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini s
 
 ```
 
-8). Jalankan migrasi database untuk membuat tabel-tabel yang diperlukan
+9). Jalankan migrasi database untuk membuat tabel-tabel yang diperlukan
 
 ```bash
   php artisan migrate
 ```
 
-8). Jalankan migrasi database seeder untuk mengisi database
+10). Jalankan migrasi database seeder untuk mengisi database
 
 ```bash
   php artisan db:seed
 ```
 
-9). Jalankan server development
+11). Jalankan server development
 
 ```bash
   composer run dev
