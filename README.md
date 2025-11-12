@@ -7,53 +7,85 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About This Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Projek ini merupakan hasil dari Ujikom pembuatan Sistem Perpustakaan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Instalasi dan Prasyarat
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini secara lokal.
 
-## Learning Laravel
+- PHP (versi 8.4 atau lebih baru)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- Composer
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Node.js & NPM
 
-## Laravel Sponsors
+- Server Database MySQL
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Langkah-Langkah Instalasi
 
-### Premium Partners
+1).  Clone proyek ke repo 
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+```bash
+  git clone https://github.com/UlhaqDaffa/Sistem-Perpustakaan-Ujikom.git
+```
 
-## Contributing
+2). Pergi ke direktori proyek
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+  cd sistem-perpustakaan-ujikom
+```
 
-## Code of Conduct
+3). Install dependensi PHP (Composer)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+  composer install
+```
 
-## Security Vulnerabilities
+4). Install dependensi JavaScript (NPM)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+  npm install
+```
 
-## License
+5). Buat file `.env` dari contoh
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+  cp .env.example .env
+```
+
+6). Generate kunci aplikasi Laravel
+
+```bash
+  php artisan key:generate
+```
+
+7). Konfigurasi koneksi database di dalam file `.env`
+
+```javascript
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=3306
+  DB_DATABASE=sistempakar
+  DB_USERNAME=root
+  DB_PASSWORD=
+```
+
+8). Jalankan migrasi database untuk membuat tabel-tabel yang diperlukan
+
+```bash
+  php artisan migrate
+```
+
+9). Jalankan proses build aset frontend
+
+```bash
+  npm run dev
+```
+
+10). Jalankan server development
+
+```bash
+  composer run dev
+```
