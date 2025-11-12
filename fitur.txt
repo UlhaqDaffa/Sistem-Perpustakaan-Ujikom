@@ -1,0 +1,92 @@
+1. Autentikasi dan Manajemen Pengguna
+Fitur ini mengatur siapa yang dapat mengakses sistem dan apa yang dapat mereka lakukan.
+
+Autentikasi Pengguna:
+
+Login: Pengguna dapat masuk ke sistem menggunakan nama_user dan password. Jika berhasil, mereka akan diarahkan ke halaman dashboard.
+
+Register: Pengguna baru dapat mendaftar dengan memberikan nama_user dan password. Saat mendaftar, mereka secara otomatis mendapatkan role sebagai 'user'.
+
+Logout: Pengguna yang sudah login dapat keluar dari sistem.
+
+Manajemen Pengguna (CRUD):
+
+Sistem memiliki fitur untuk mengelola data pengguna (petugas/admin).
+
+Tambah Pengguna: Dapat menambahkan pengguna baru dengan menentukan nama_user, password (yang akan di-hash), dan role ('admin' atau 'user').
+
+Lihat Pengguna: Menampilkan daftar semua pengguna dengan paginasi.
+
+Update Pengguna: Mengedit data pengguna yang ada, termasuk nama_user, role, dan password (opsional).
+
+Hapus Pengguna: Menghapus data pengguna dari sistem.
+
+Middleware Role: Terdapat sebuah middleware IsAdmin yang dirancang untuk membatasi akses hanya untuk pengguna dengan role 'admin'. Namun, berdasarkan file web.php, middleware ini belum diterapkan pada rute manapun, sehingga secara teknis rute manajemen pengguna (/users) dapat diakses oleh semua pengguna yang sudah login, terlepas dari role-nya.
+
+2. Dashboard
+Setelah pengguna berhasil login, mereka akan disambut oleh halaman dashboard yang berfungsi sebagai ringkasan sistem.
+
+Statistik Utama: Menampilkan jumlah total buku, jumlah total anggota, dan jumlah total transaksi peminjaman yang tercatat.
+
+Aktivitas Terbaru: Menampilkan 5 data peminjaman terbaru untuk pemantauan cepat.
+
+3. Manajemen Data Master
+Ini adalah fitur inti untuk mengelola data-data dasar yang digunakan dalam sistem perpustakaan.
+
+Manajemen Buku (CRUD):
+
+Menampilkan daftar semua buku beserta kategori-nya, diurutkan dari yang terbaru dan menggunakan paginasi (10 per halaman).
+
+Menambahkan buku baru dengan validasi data yang cukup ketat (misalnya, tahun harus 4 digit, ISBN harus angka, dll.).
+
+Mengedit dan memperbarui data buku yang sudah ada.
+
+Menghapus data buku.
+
+Manajemen Kategori Buku (CRUD):
+
+Menampilkan, menambah, mengedit, dan menghapus data kategori buku.
+
+Validasi memastikan bahwa nama kategori bersifat unik (tidak boleh ada duplikat).
+
+Manajemen Anggota (CRUD):
+
+Menampilkan, menambah, mengedit, dan menghapus data anggota perpustakaan.
+
+Data yang dikelola meliputi nama, alamat, no. HP, tanggal lahir, dan tanggal daftar.
+
+Manajemen Denda (CRUD):
+
+Fitur untuk mengatur nominal denda.
+
+Admin dapat menambah, melihat, mengedit, dan menghapus data nominal denda yang berlaku.
+
+4. Manajemen Transaksi
+Fitur ini mengelola proses peminjaman buku.
+
+Manajemen Peminjaman:
+
+Menampilkan daftar semua transaksi peminjaman, lengkap dengan data relasi ke anggota, denda, dan pengguna (petugas) yang mencatat.
+
+Mengedit data transaksi peminjaman yang sudah ada.
+
+Menghapus data transaksi peminjaman.
+
+Catatan: Berdasarkan file web.php dan BorrowController, sistem ini anehnya hanya memiliki fitur untuk melihat, mengedit, dan menghapus data peminjaman. Tidak terlihat adanya fitur untuk menambahkan (store) transaksi peminjaman baru.
+
+5. Pelaporan (Reporting)
+Sistem ini memiliki modul khusus untuk menghasilkan laporan.
+
+Halaman Laporan: Menyediakan halaman utama untuk memilih jenis laporan yang ingin dicetak.
+
+Cetak Laporan:
+
+Sistem dapat mencetak laporan berdasarkan tipe yang dipilih.
+
+Jenis laporan yang didukung adalah:
+
+Laporan Data Anggota.
+
+Laporan Data Buku (lengkap dengan kategori).
+
+Laporan Transaksi Peminjaman (lengkap dengan anggota, denda, dan petugas).

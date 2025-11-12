@@ -1,0 +1,9 @@
+## Admin
+
+username: admin
+password: password
+
+## User
+
+username: user
+password: password
