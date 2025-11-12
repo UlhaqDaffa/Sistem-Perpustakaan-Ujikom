@@ -7,11 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About This Project
+## Tentang
 
 Projek ini merupakan hasil dari Ujikom pembuatan Sistem Perpustakaan.
 
-## 🚀 Instalasi dan Prasyarat
+## Instalasi dan Prasyarat
 
 Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini secara lokal.
 
