@@ -7,11 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About This Project
+## Tentang
 
 Projek ini merupakan hasil dari Ujikom pembuatan Sistem Perpustakaan.
 
-## 🚀 Instalasi dan Prasyarat
+## Instalasi dan Prasyarat
 
 Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini secara lokal.
 
@@ -67,25 +67,45 @@ Repo ini memerlukan beberapa resource berikut ini untuk menjalankan proyek ini s
   DB_CONNECTION=mysql
   DB_HOST=127.0.0.1
   DB_PORT=3306
-  DB_DATABASE=sistempakar
+  DB_DATABASE=sistem_perpustakaan
   DB_USERNAME=root
   DB_PASSWORD=
 ```
 
-8). Jalankan migrasi database untuk membuat tabel-tabel yang diperlukan
+8). Buat database pada mysql
+
+```bash
+  CREATE DATABASE sistem_perpustakaan;
+
+```
+
+9). Jalankan migrasi database untuk membuat tabel-tabel yang diperlukan
 
 ```bash
   php artisan migrate
 ```
 
-9). Jalankan proses build aset frontend
+10). Jalankan migrasi database seeder untuk mengisi database
 
 ```bash
-  npm run dev
+  php artisan db:seed
 ```
 
-10). Jalankan server development
+11). Jalankan server development
 
 ```bash
   composer run dev
 ```
+
+### Konfigurasi Laravel Herd (opsional)
+
+Pembuat menggunakan laravel herd site generator untuk development aplikasi, berikut cara konfigurasinya:
+
+- Install Laravel Herd jika belum
+- Klik Sites pada menu sidebar
+- Klik tombol add pada pojok kanan
+- Pilih link existing project lalu next
+- Pilih folder project yang sudah di clone
+- Atur project name dan klik https kemudian next
+
+
